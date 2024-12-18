@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- CSS sheets -->
+    <link rel="stylesheet" href="Allwebsite.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/8a9bc23044.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+<!-- The sign up page, in which user will be entering the email he/she wants to use to create the account, hi/hers first and last name, in addition to the password
+he/she wants to use. And if he/she already has an account, they can navigate easily to the log in page. The submit button will be taking you to the info page. -->
+
+
+<body>
+    <!-- This page includes only 1 section -->
+    <section class="Sign_Log_Page">
+
+        <!-- The sentence that should be viewed by the user when entering the page -->
+        <div class="Welcome_Sign_Login"><h1>Welcome To Our Family!</h1></div>
+
+            <!-- Can be considered as a section, and it was placed to be able to place the below div in the middle of the screen -->
+            <div class="Sign_Log_box">
+                <!-- This box was made to hold inside an image as a background, and the box containing the info that should be taken. This box is kind of
+            made to be something similar to a horizontal phone design -->
+                <div class="Sign_Up_Log_in_phone_design">
+
+                    <!-- This box is the one we talked about above which should be located in the middle of the parent box (div) -->
+                    <div id="Sign_big_box">
+
+                        <!-- Below box is placed inside the original box containing the info, this box was made just to make it easier to style the page,
+                        changing width and height and other attributes as desired, without affecting the first box in which I wanted to apply another
+                        attributes that I didn't want to be located inside this box -->
+                        <div id="Sign_box">
+
+                            <!-- This is the form that the user will be filling -->
+                            <form action="Sign_Up_Page.php" method="post" onsubmit="return validateSignUpForm()">
+                                <h2 class="Sign_Log_Create_Login">Create Your Account</h2>
+                                
+
+                                <!-- A box containing as an input the first and last name, also this box was made to make it easier to style -->
+                                <div class="FN_LN_Username">
+                                    <input type="text" id="FN" name="FN" required>
+                                    <label for="FN" id="FN_Label">First Name</label>
+
+                                    <input type="text" id="LN" name="LN" required>
+                                    <label for="LN" id="LN_Label">Last Name</label>
+                                </div>
+
+                                <!-- A box containing as an input the email -->
+                                <div class="email_pass">
+                                    <input type="email" id="email" name="email"  placeholder=" " required>
+                                    <i class="fa-solid fa-user"></i>
+                                    <label for="email">Email</label>
+                                </div>
+                                
+                                <!-- A box containing as an input the password -->
+                                <div class="email_pass">
+                                    <input type="password" id="password" name="password" placeholder=" " required>
+                                    <i class="fa-solid fa-unlock"></i>
+                                    <label for="password">Password</label>
+                                </div>
+            
+                                <!-- A box containing a checkbox, giving the user the freedom to choose whether to save his login info or no -->
+                                <div id="check_Remember">
+                                    <div>
+                                        <label for="checkbox">
+                                        <input type="checkbox" id="checkbox" class="Log_Sign_checkbox" name="checkbox">Remember Me</label>
+                                    </div>
+                                </div>
+                                <div class="Create_Account_Log_button"><input type="submit" value="Create Account"></div>
+                            </form>
+
+                            <!-- A box containing the submit button which should be taking you to the info page. -->
+                            
+            
+                                <!-- If the user already have an account, he will be able to navigate easily to the login page through here -->
+                                <div class="Log_In_Sign_Up_acc"><p>Already have an account? <a href="Login.html">Log In</a></p></div>
+                        </div>
+                    </div>
+    
+                </div>
+                <script src="AllWebsite.js"></script>
+    
+            </div>
+
+    </section>
+
+</body>
+</html>

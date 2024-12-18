@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css sheet -->
+    <link rel="stylesheet" href="Allwebsite.css">
+    <!--  Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/8a9bc23044.js" crossorigin="anonymous"></script>
+    <title>Library of Exercises</title>
+
+    <style>
+
+#searchInput {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 40px;
+    border: 0;
+    width: 300px;
+    font-size: 16px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: black;
+}
+
+    </style>
+</head>
+
+
+
+<!-- A page containing a list of exercises, divided per muscle -->
+
+<body class="Four_Five_Six_DAYS">
+
+    <script>
+        function searchTables() {
+          // Declare variables
+          var input, filter, tables, table, tr, td, i, j, txtValue;
+          input = document.getElementById("searchInput");
+          filter = input.value.toUpperCase();
+          tables = document.querySelectorAll('.DAYST');
+        
+          // Loop through all tables
+          for (i = 0; i < tables.length; i++) {
+            table = tables[i];
+            tr = table.getElementsByTagName("tr");
+        
+            
+            for (j = 0; j < tr.length; j++) {
+              td = tr[j].getElementsByTagName("td")[0]; 
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[j].style.display = "";
+                } else {
+                  tr[j].style.display = "none";
+                }
+              }
+            }
+          }
+        }
+        </script>
+        
+        
+
+    <header class="Pages_header">
+
+        <div class="navBar_plans">
+            <nav class="navigation_plans">
+                <h2 class="Fit_Forge_wc">FIT FORGE</h2>
+                <input type="text" id="searchInput" onkeyup="searchTables()" placeholder="Search for exercises...">
+                <a href="Profile.php" class="Profile" id="Profile_wc">Profile<i class="fa-solid fa-user"></i></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Below are several sections, each containing the list of exercises for a specific muscle -->
+
+    <section id="Trapezius">
+        <h1 class="DTitles">Trapezius</h1>
+
+
+        <table class="DAYST">
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+
+            <tr>
+                <td>BARBELL OVERHEAD SHRUG</td>
+                <td><img src="Main_screen_photos/trapezius/overhead-shrug.gif"
+                        alt="A demonstration of a man doing overhead shrugs"></td>
+                <td>Trapezius</td>
+                <td>Stand with feet shoulder-width apart, gripping a barbell overhead. Lift and extend your arms,
+                    ensuring a straight back; then, shrug your shoulders up while keeping arms straight, engaging upper
+                    back muscles, and hold briefly before lowering shoulders back down, maintaining core engagement.
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>GITTLESON SHRUG</td>
+                <td><img src="Main_screen_photos/trapezius/Dumbbell-Seated-Gittleson-Shrug.gif"
+                        alt="A demonstration of a man doing gittleson shrug"></td>
+                <td>Neck, Trapezius</td>
+                <td>Sit on a bench, hold a dumbbell in one hand, and grasp the bench behind your hip with the opposite
+                    hand. Let your loaded shoulder drop, then raise it towards your ear, focusing on contracting the
+                    upper trapezius muscles. Repeat on each side for the desired number of repetitions.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>DUMBBELL SHRUG</td>
+                <td><img src="Main_screen_photos/trapezius/Dumbbell-Shrug.gif"
+                        alt="A demonstration of a man doing dumbbel shrugs"></td>
+                <td>Trapezius</td>
+                <td>Begin with a light weight, ensuring proper form. Stand straight with feet shoulder-width apart, hold
+                    dumbbells with palms facing your body, lift shoulders towards ears using scapula and traps, hold at
+                    the top, then lower the dumbbells slowly. Repeat for 3-4 sets of 10-15 reps, gradually increasing
+                    weight as you become more comfortable with the exercise.</td>
+            </tr>
+
+            <tr>
+                <td>REAR DELT FLY MACHINE</td>
+                <td><img src="Main_screen_photos/trapezius/Rear-Delt-Machine-Flys.gif"
+                        alt="A demonstration of a man doing rear delt fly machine"></td>
+                <td>Trapezius, Shoulders</td>
+                <td>Adjust the seat for shoulder-level handles, maintaining proper neck and lower back posture. Exhale,
+                    pull arms apart until shoulders are parallel with the body, holding briefly, then return slowly.
+                    Focus on a comfortable range of motion, maintain head alignment, and avoid using lower back to
+                    cheat; if felt, it may indicate the weight is too heavy.</td>
+            </tr>
+
+            <tr>
+                <td>BODYWEIGHT MILITARY PRESS</td>
+                <td><img src="Main_screen_photos/trapezius/Bodyweight-Military-Press.gif"
+                        alt="A demonstration of a man doing Bodyweight Military Press"></td>
+                <td>Trapezius, Shoulders</td>
+                <td>Stand with feet shoulder-width apart, arms at sides. Raise arms to shoulder level, elbows at 90
+                    degrees, palms forward. Engage core, squeeze glutes, press hands overhead without locking elbows,
+                    pause at the top, and lower slowly. Repeat for desired repetitions.</td>
+            </tr>
+
+        </table>
+
+
+
+    </section>
+
+
+
+
+
+    <section id="Shoulders">
+        <h1 class="DTitles">Shoulders</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>STANDING DUMBBELL SHOULDER PRESS</td>
+                <td><img src="Main_screen_photos/Shoulders/Standing-Dumbbell-Overhead-Press (1).gif"
+                        alt="A demonstration of a man doing Standing Dumbbell Overhead Press"></td>
+                <td>Shoulders</td>
+                <td>
+                    Stand with feet shoulder-width apart, hold dumbbells at shoulder height with palms forward and
+                    elbows bent at 90 degrees. Exhale, push dumbbells upward, fully extending arms without locking
+                    elbows. Maintain neutral spine, keep head straight, and wrists in line with forearms. Inhale, lower
+                    dumbbells back to shoulder height in a controlled manner.</td>
+            </tr>
+
+
+            <tr>
+                <td>DUMBBELL LATERAL RAISE</td>
+                <td><img src="Main_screen_photos/Shoulders/Dumbbell-Lateral-Raise.gif"
+                        alt="A demonstration of a man doing dumbbell lateral raise"></td>
+                <td>Shoulders</td>
+                <td>Stand tall, feet shoulder-width apart, knees slightly bent, holding a dumbbell in each hand with
+                    palms facing your body. Engage core, maintain a slight elbow bend, and lift both arms to the sides
+                    until parallel to the floor. Focus on shoulders, not momentum, pause at the top, then slowly lower
+                    arms. Repeat for desired repetitions.</td>
+            </tr>
+
+
+            <tr>
+                <td>SMITH MACHINE SHOULDER PRESS</td>
+                <td><img src="Main_screen_photos/Shoulders/Smith-Machine-Shoulder-Press.gif"
+                        alt="A demonstration of a man doing smith machine shoulder press"></td>
+                <td>Shoulders</td>
+                <td>Sit on a bench inside the Smith Machine, adjusting the barbell's starting height for easy reach.
+                    Grasp the bar, ensuring elbows are bent at 90 degrees when it's at chin level. Exhale, press the
+                    barbell overhead, hold briefly, and slowly lower. Adjust the seat for comfort, maintain good lower
+                    back and neck posture, and perform the exercise in a slow, controlled manner.</td>
+            </tr>
+
+
+            <tr>
+                <td>CABLE LATERAL RAISE</td>
+                <td><img src="Main_screen_photos/Shoulders/one-arm-Cable-Lateral-Raise.gif"
+                        alt="A demonstration of a woman doing cable lateral raise"></td>
+                <td>Shoulders</td>
+                <td>Attach a handle to a cable machine, grasp it with an overhand grip. Exhale, lift your arm to 90
+                    degrees to the side, hold briefly, and return slowly. Focus on maintaining proper posture and form,
+                    engage abdominal muscles to stabilize pelvis, and keep shoulder blades pulled down and back to avoid
+                    shrugging or tilting.</td>
+            </tr>
+
+
+            <tr>
+                <td>45 DEGREE INCLINE ROW</td>
+                <td><img src="Main_screen_photos/Shoulders/45-Degree-Incline-Row.gif"
+                        alt="A demonstration of a man doing 45 degree incline row"></td>
+                <td>Shoulders, Trapezius</td>
+                <td>Set a bench at a 45-degree angle, lie face down with chest against it, and feet flat on the ground.
+                    With an overhand grip, lift dumbbells or barbell toward chest, keeping elbows close. Pause at the
+                    top, squeezing shoulder blades together, then inhale and lower. Repeat for desired reps.</td>
+            </tr>
+
+
+            <tr>
+                <td>LEVER SHOULDER PRESS / MACHINE SHOULDER PRESS</td>
+                <td><img src="Main_screen_photos/Shoulders/Lever-Shoulder-Press.gif"
+                        alt="A demonstration of a man doing machine shoulder press"></td>
+                <td>Shoulders</td>
+                <td>Adjust the seat height for comfort and align with machine markers. Grasp handles, maintain good
+                    spinal alignment, engage core, exhale, and press arms overhead. Hold briefly and lower slowly. Pay
+                    attention to posture, avoiding excessive arching. Experiment with different grips—neutral or
+                    abducted—for variety in shoulder training. Use caution with a history of shoulder or neck pain.</td>
+            </tr>
+
+
+            <tr>
+                <td>ALTERNATING DUMBBELL FRONT RAISE</td>
+                <td><img src="Main_screen_photos/Shoulders/Alternating-Dumbbell-Front-Raise.gif"
+                        alt="A demonstration of a man doing alternating dumbbell front raise"></td>
+                <td>Shoulders</td>
+                <td>Start by standing with dumbbells in hand, palms facing backward. Exhale, alternately lift arms in
+                    front to about 90 degrees, hold briefly, and slowly return. Engage abdominal muscles to maintain
+                    stability and avoid using momentum or compromising posture during the exercise.</td>
+            </tr>
+
+
+            <tr>
+                <td>REAR DELT FLY MACHINE</td>
+                <td><img src="Main_screen_photos/trapezius/Rear-Delt-Machine-Flys.gif"
+                        alt="A demonstration of a man doing rear delt fly machine"></td>
+                <td>Shoulders, Trapezius</td>
+                <td>Adjust the seat to shoulder level, maintaining good neck and lower back posture. Exhale, pull arms
+                    apart until shoulders are parallel with the body, briefly hold, and slowly return. Use a comfortable
+                    range of motion, keep head aligned, and avoid using lower back; feeling lower back muscles may
+                    indicate excessive weight.</td>
+            </tr>
+
+
+            <tr>
+                <td>ARNOLD PRESS</td>
+                <td><img src="Main_screen_photos/Shoulders/Arnold-Press.gif"
+                        alt="A demonstration of a man doing Arnold Press"></td>
+                <td>Shoulders</td>
+                <td>Position on the bench, hold dumbbells at chest height with palms facing body. Inhale, raise
+                    dumbbells while turning palms outward, exhale, continue raising until arms are stretched above with
+                    locked elbows. Pause, inhale, lower dumbbells in a controlled manner with palms facing body. Repeat,
+                    raising dumbbells with palm rotation. Start with a lighter weight, gradually increase, and perform
+                    the full 180-degree rotation slowly to maximize results and avoid injury.</td>
+            </tr>
+
+
+            <tr>
+                <td>DUMBBELL UPRIGHT ROW</td>
+                <td><img src="Main_screen_photos/Shoulders/Dumbbell-Upright-Row.gif"
+                        alt="A demonstration of a man doing dumbbell upright rows"></td>
+                <td>Shoulders, Trapezius</td>
+                <td>Stand, holding dumbbells at arm's length in front of your waist, palms facing toward you. Lift the
+                    weights in front of your torso, keeping them close to your body, until elbows reach shoulder height.
+                    Pause and then lower the weights back to the starting position.</td>
+            </tr>
+
+        </table>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <section id="Chest">
+        <h1 class="DTitles">Chest</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>INCLINE CHEST FLY MACHINE</td>
+                <td><img src="Main_screen_photos/Chest/Incline-Chest-Fly-Machine.gif"
+                        alt="A demonstration of a man doing incline chest fly machine"></td>
+                <td>Chest</td>
+                <td>Adjust the machine for an upper chest target. Sit with back against the backrest, feet on the floor,
+                    and grab handles with an overhand grip. Start with arms extended to the sides, slightly bent at
+                    elbows. Exhale, bring handles together in front of you, focusing on chest muscles. Hold the
+                    contraction, inhale, and slowly reverse the movement in a controlled manner. Aim for a challenging
+                    weight with smooth, controlled repetitions and sets, avoiding elbow lockout.</td>
+            </tr>
+
+
+            <tr>
+                <td>BENCH PRESS</td>
+                <td><img src="Main_screen_photos/Chest/Barbell-Bench-Press.gif"
+                        alt="A demonstration of a man doing bench press"></td>
+                <td>Chest</td>
+                <td>To execute a proper bench press, set up with a stable bench and flat back, grip the bar with palms
+                    facing away, engage your core, and lower the bar with controlled, tucked elbows. Press explosively,
+                    keeping shoulders down, using proper breathing, and maintaining elbow position close to your body
+                    for optimal form and safety.</td>
+            </tr>
+
+
+            <tr>
+                <td>PEC DECK FLY</td>
+                <td><img src="Main_screen_photos/Chest/Pec-Deck-Fly.gif"
+                        alt="A demonstration of man doing Pec Deck Fly"></td>
+                <td>Chest</td>
+                <td>Adjust the machine's seat height to chest level, sit with back against the backrest, and grasp
+                    handles with straight arms parallel to the floor. Bring handles together in front of your chest by
+                    squeezing your chest muscles, maintaining straight arms. Hold the contraction, slowly release to
+                    starting position, and repeat for desired repetitions. Keep back against the backrest, avoid
+                    rounding shoulders, and focus on using chest muscles. Use proper form, avoid excessive weight, and
+                    consult with a certified fitness trainer if unsure about form or concerns.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>LOW CABLE CROSSOVER</td>
+                <td><img src="Main_screen_photos/Chest/Low-Cable-Crossover.gif"
+                        alt="A demonstration of a man doing low cable crossovers"></td>
+                <td>Chest</td>
+                <td>Perform a low cable crossover by setting the machine to the lowest level, attaching handles, and
+                    standing in the center with feet shoulder-width apart. Grab handles, bringing hands to shoulder
+                    height. Step forward, lean forward at the waist, and draw weights upward towards the midline of your
+                    body, keeping elbows slightly bent. Pause, release tension, and return to starting position. Repeat
+                    for desired reps, switching sides for each arm.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>HIGH CABLE CROSSOVER</td>
+                <td><img src="Main_screen_photos/Chest/High-Cable-Crossover.gif"
+                        alt="A demonstration of a man doing high cable crossover"></td>
+                <td>Chest</td>
+                <td>Adjust the cables to the highest position, attach handles, and stand in the center facing away from
+                    the machine. Hold handles with palms down, step forward or lean slightly, and extend arms parallel
+                    to the floor. Cross handles in front of your body, pause to squeeze chest muscles, then slowly
+                    return to the starting position with slightly bent arms. Repeat for the desired number of
+                    repetitions.</td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>CABLE CROSSOVERS (UPPER CHEST)</td>
+                <td><img src="Main_screen_photos/Chest/Cable-Upper-Chest-Crossovers.gif"
+                        alt="A demonstration of a man doing cable crossovers"></td>
+                <td>Chest</td>
+                <td>Adjust pulleys to the highest position, attach handles, and hold one in each hand. Step forward with
+                    a slight knee bend, then, with elbows slightly bent and chest up, cross arms up and in front of your
+                    head. Squeeze chest muscles at the top, slowly spread arms apart, and lower handles to the starting
+                    position. Repeat for desired reps. Use proper form to avoid injury, start with lighter weights, and
+                    gradually increase. Consider combining with other chest exercises like push-ups or bench presses for
+                    comprehensive chest strength and development.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>INCLINE BARBELL BENCH PRESS</td>
+                <td><img src="Main_screen_photos/Chest/Incline-Barbell-Bench-Press.gif"
+                        alt="A demonstration of a man doing incline barbell bench press"></td>
+                <td>Chest</td>
+                <td>Set up the incline bench at a 30 to 45-degree angle, load the barbell, and lie down with feet on the
+                    ground and head resting on the bench. Grip the bar slightly wider than shoulder-width, unrack it,
+                    and bring it down to the upper chest with elbows flared out. Press the barbell back up, exhaling as
+                    you push, and repeat for desired reps. Maintain proper form, keeping core tight, back flat on the
+                    bench, and feet planted. Avoid bouncing the bar off the chest and excessive back arching. Start with
+                    a lighter weight and gradually increase as strength improves.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>CHEST DIPS</td>
+                <td><img src="Main_screen_photos/Chest/Chest-Dips.gif" alt="A demonstration of a man doing Chest Dips">
+                </td>
+                <td>Chest</td>
+                <td>Stand facing parallel bars with hands shoulder-width apart and palms inward. Jump up, straighten
+                    arms, and lift feet off the ground. Lower body by bending elbows, leaning slightly forward until
+                    shoulders are below elbows or feeling a chest stretch. Push back up, straightening arms, and exhale.
+                    Keep core engaged and body straight. Beginners can start with assisted dips using resistance bands
+                    or a dip machine to build strength before progressing to unassisted dips.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>SMITH MACHINE HEX PRESS</td>
+                <td><img src="Main_screen_photos/Chest/Smith-Machine-Hex-Press.gif"
+                        alt="A demonstration of a man doing smith machine hex press"></td>
+                <td>Chest</td>
+                <td>Position yourself beneath the Smith Machine bar with a V grip attachment, unlock the bar, and start
+                    with arms extended above your chest. Lower the bar slowly, press it explosively upward, squeeze the
+                    chest at the top for a one-second pause, and slowly lower, emphasizing the eccentric phase. Perform
+                    the desired repetitions and sets, focusing on proper form for enhanced chest engagement and pressing
+                    power.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>WIDE GRIP BENCH PRESS</td>
+                <td><img src="Main_screen_photos/Chest/Wide-Grip-Barbell-Bench-Press.gif"
+                        alt="A demonstration of a man doing wide grip barbell bench press"></td>
+                <td>Chest</td>
+                <td>Lie on a flat bench with feet flat on the ground, grab the bar with a wide grip slightly wider than
+                    shoulder-width, and unrack it. Lower the bar slowly to your chest with flared-out elbows, pause
+                    briefly, then press it back up, squeezing your chest at the top. Repeat for desired repetitions,
+                    ensuring proper form, avoiding excessive elbow flaring to protect the shoulders, using an
+                    appropriate weight, and warming up before starting the exercise.</td>
+            </tr>
+
+        </table>
+
+
+
+    </section>
+
+
+
+
+
+    <section id="Back">
+        <h1 class="DTitles">Back / Wing</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>ROWING MACHINE</td>
+                <td><img src="Main_screen_photos/Back : Wing/Rowing-Machine (1).gif"
+                        alt="A demonstration of a woman doing rowing machine"></td>
+                <td>Back / Wing, Cardio, Full Body</td>
+                <td>With your back straight, core engaged, and balls of your feet firmly in the straps, push back first
+                    with the lower body, then use your upper back to pull hands toward your chest. Release your arms
+                    toward the base and bend your knees to glide back to starting position. Think: legs, arms, arms,
+                    legs</td>
+            </tr>
+
+
+            <tr>
+                <td>PULL-UP</td>
+                <td><img src="Main_screen_photos/Back : Wing/Pull-up.gif" alt="A demonstration of a man doing pull ups">
+                </td>
+                <td>Back / Wing, Calisthenics</td>
+                <td>Take on a neutral wrist position with your forearms and wrists aligned straight up and down. Pull
+                    your shoulders back and down, and try to keep this form through the entire pull-up. Exhale and
+                    slowly pull your body up by bending your elbows and pulling them down to your sides.</td>
+            </tr>
+
+
+            <tr>
+                <td>LAT PULLDOWN</td>
+                <td><img src="Main_screen_photos/Back : Wing/Lat-Pulldown.gif"
+                        alt="A demonstration of a man doing Lat Pulldowns"></td>
+                <td>back / Wing</td>
+                <td>Attach a wide handle bar to the cable, sit on the lat pulldown machine with feet flat, and grab the
+                    bar with palms facing away. Pull it down to your chest, engaging your back muscles, then release
+                    back to the starting position. Focus on controlled movements, keep shoulders down, and start with a
+                    lighter weight, gradually increasing for strength progression.</td>
+            </tr>
+
+
+            <tr>
+                <td>SEATED CABLE ROW</td>
+                <td><img src="Main_screen_photos/Back : Wing/Seated-Cable-Row.gif"
+                        alt="A demonstration of a man doing seated cable row"></td>
+                <td>Back / Wing</td>
+                <td>Keep feet on the cable machine's footrest, maintain a straight back, engage core muscles, and
+                    retract shoulder blades before starting. Pull cable handles towards you, keeping elbows flared out
+                    and squeezing shoulder blades together at the end. Pause at the top and release slowly to the
+                    starting position, exhaling as you pull and inhaling during the return. Repeat for desired
+                    repetitions, maintaining proper posture, starting with a lighter weight, and avoiding momentum for
+                    effective muscle engagement.</td>
+            </tr>
+
+
+            <tr>
+                <td>BARBELL BENT OVER ROW</td>
+                <td><img src="Main_screen_photos/Back : Wing/Barbell-Bent-Over-Row.gif"
+                        alt="A demonstration of a man doing barbell bent over row"></td>
+                <td>Back / Wing, Erector Spinae, Full Body</td>
+                <td>Stand with feet shoulder-width apart, choose grip preference on the barbell. Hinge at hips, keep a
+                    straight back, and reach down to grasp the barbell with extended arms. Maintain a flat back, chest
+                    out, and shoulder blades pulled back for the starting position. Pull the barbell towards upper
+                    abdomen or lower chest, squeezing shoulder blades together. Keep core tight. Slowly lower the
+                    barbell with control, avoiding forward pull.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>BENT OVER DUMBBELL ROW</td>
+                <td><img src="Main_screen_photos/Back : Wing/Bent-Over-Dumbbell-Row.gif"
+                        alt="A demonstration of a man doing bent over dumbbell row"></td>
+                <td>Back / Wing, Erector Spinae, Full Body</td>
+                <td>Stand with feet shoulder-width apart, grab dumbbells with palms facing each other. Keep back
+                    straight, slightly bend knees, and lean forward 45-90 degrees. Let arms hang down, then pull weights
+                    up to waist, keeping elbows close and squeezing shoulder blades together.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>MUSCLE-UP</td>
+                <td><img src="Main_screen_photos/Back : Wing/Muscle-up-vertical-bar.gif"
+                        alt="A demonstration of a man doing muscle ups"></td>
+                <td>Back / Wing, Calisthenics, Full Body</td>
+                <td>Start hanging from the bar with arms extended, palms away, and a slightly wider than shoulder-width
+                    grip. Initiate a powerful pull-up using back muscles and arms. Use a false grip for the transition,
+                    rotating wrists forward as chest reaches bar height. Drive elbows down, engaging triceps, and
+                    transition into the dip position with extended arms, locked shoulders, and a tight core. Lower
+                    yourself down from the dip position, reversing the movement to the starting position.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>DEADLIFT</td>
+                <td><img src="Main_screen_photos/Back : Wing/Barbell-Deadlift.gif"
+                        alt="A demonstration of a man doing barbell deadlift"></td>
+                <td>Back / Wing, Erector Spinae, Hip, Leg</td>
+                <td>Stand with feet shoulder-width apart, grasp the barbell with hands slightly wider than shoulders.
+                    Bend knees, lower hips, and keep a straight back. Brace core, lift the bar using legs, glutes, and
+                    back muscles. Pause at the top, lower with a straight back and engaged core. Maintain proper form,
+                    emphasizing straight back and chest up, avoiding rounding shoulders. Use a suitable weight for
+                    proper form and injury prevention.</td>
+            </tr>
+
+
+
+            <tr>
+                <td>SINGLE ARM TWISTING SEATED CABLE ROW</td>
+                <td><img src="Main_screen_photos/Back : Wing/Single-Arm-Twisting-Seated-Cable-Row.gif"
+                        alt="A demonstration of a man doing SINGLE ARM TWISTING SEATED CABLE ROW"></td>
+                <td>Back / Wing</td>
+                <td>Lean over as you keep the natural alignment of your back and grab the single handle attachment with
+                    your left arm using a palms-down grip. With your arm extended pull back until your torso is at a
+                    90-degree angle from your legs.</td>
+            </tr>
+
+        </table>
+
+
+
+    </section>
+
+
+
+
+
+
+    <section id="Biceps">
+        <h1 class="DTitles">Biceps</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>SEATED ZOTTMAN CURL</td>
+                <td><img src="Main_screen_photos/Biceps/Seated-Zottman-Curl (1).gif"
+                        alt="A demonstration of a man doing zottman curl"></td>
+                <td>Biceps, Forearms</td>
+                <td>Sit on a bench with a straight back and feet flat. Hold a dumbbell in each hand with palms facing
+                    up. Curl the dumbbells toward your shoulders with palms facing up. At the top, rotate wrists into a
+                    palms-down position. Lower the dumbbells, keeping palms facing down. Once arms are extended, rotate
+                    wrists back to palms-up position and repeat.</td>
+            </tr>
+
+
+            <tr>
+                <td>DOUBLE ARM DUMBBELL CURL</td>
+                <td><img src="Main_screen_photos/Biceps/Double-Arm-Dumbbell-Curl.gif"
+                        alt="A demonstration of man doing double arm dumbbell curl"></td>
+                <td>Biceps</td>
+                <td>Hold dumbbells with palms forward, curl both up by bending elbows while keeping upper arms still.
+                    Continue until dumbbells are shoulder level, pause, then lower to starting position. Repeat for
+                    desired reps.</td>
+            </tr>
+
+
+            <tr>
+                <td>CONCENTRATION CURL</td>
+                <td><img src="Main_screen_photos/Biceps/Concentration-Curl.gif"
+                        alt="A demonstration of a man doing Concentration Curl"></td>
+                <td>Biceps</td>
+                <td>Sit on a bench with a dumbbell in one hand, elbow on the inside of your thigh. Curl the weight
+                    towards your shoulder, keeping the upper arm against your thigh. Pause, then lower to the starting
+                    position. Repeat and switch arms.</td>
+            </tr>
+
+            <tr>
+                <td>DUMBBELL PREACHER CURL</td>
+                <td><img src="Main_screen_photos/Biceps/Dumbbell-Preacher-Curl.gif"
+                        alt="A demonstration of a man doing dumbbell preacher curl"></td>
+                <td>Biceps</td>
+                <td>Sit on a preacher curl bench, with one arm supported on the bench and holding a dumbbell. Curl the
+                    dumbbell towards your shoulder, keeping the upper arm stationary. Squeeze your biceps at the top,
+                    then lower the dumbbell. Repeat on one arm before switching.</td>
+            </tr>
+
+            <tr>
+                <td>HAMMER CURL</td>
+                <td><img src="Main_screen_photos/Biceps/Hammer-Curl.gif"
+                        alt="A demonstration of a man doing Hammer Curls"></td>
+                <td>Biceps</td>
+                <td>Maintain good posture standing or sitting. Hold a weight in each hand with palms facing each other,
+                    arms fully extended. Curl one arm towards your shoulder, contract your biceps at the top, then
+                    slowly lower the weight. Alternate arms, keeping control throughout the movement.</td>
+            </tr>
+
+
+        </table>
+
+
+
+    </section>
+
+
+
+
+    <section id="Triceps">
+        <h1 class="DTitles">Triceps</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>ONE ARM TRICEPS PUSHDOWN</td>
+                <td><img src="Main_screen_photos/Triceps/One-arm-triceps-pushdown (1).gif"
+                        alt="A demonstration of a man doing one arm triceps pushdowns"></td>
+                <td>Triceps</td>
+                <td>Performing the exercise one arm at a time allows for focused form and technique. Attach a rope or
+                    handle to the top of a cable machine, grasp it with one hand, and start with your elbow bent at 90
+                    degrees. Exhale, pull down, extend your elbow, hold briefly, and return to the starting position.
+                    Modify repetitions, sets, tempo, and intensity for varied effects.</td>
+            </tr>
+
+
+            <tr>
+                <td>TRICEPS PUSH-DOWN</td>
+                <td><img src="Main_screen_photos/Triceps/Pushdown.gif"
+                        alt="A demonstration of a man doing triceps pushdowns"></td>
+                <td>Triceps</td>
+                <td>Stand facing a cable machine with a high pulley attachment, gripping the straight bar or rope handle
+                    with an overhand grip. Maintain a shoulder-width stance, slight knee bend, and engage your core.
+                    Begin with elbows bent, forearms parallel to the ground. Exhale, engage triceps, and push the bar
+                    down, fully extending arms. Hold briefly, then slowly return to the starting position with
+                    controlled movements. Aim for the desired number of repetitions to target the triceps effectively.
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>TRICEPS DIPS</td>
+                <td><img src="Main_screen_photos/Triceps/Triceps-Dips.gif"
+                        alt="A demonstration of a man doing triceps dips"></td>
+                <td>Triceps, Chest</td>
+                <td>Begin Dips from the up position with straight elbows. Inhale, lowering your body by bending elbows,
+                    slightly leaning forward. Hold briefly at the bottom, then exhale, straightening your elbows to
+                    return. Prioritize a slow, controlled motion to avoid swaying. Aim for a comfortable range of
+                    motion, around a 90-degree bend. If full dips are challenging, consider alternatives like bench dips
+                    or a dip assist machine to build strength.</td>
+            </tr>
+
+
+            <tr>
+                <td>CABLE ROPE OVERHEAD TRICEPS EXTENSION</td>
+                <td><img src="Main_screen_photos/Triceps/Cable-Rope-Overhead-Triceps-Extension.gif"
+                        alt="A demonstration of a man doing cable rope overhead triceps extension"></td>
+                <td>Triceps</td>
+                <td>Attach a rope handle to the high pulley of a cable station. Grab the handle and turn away from the
+                    machine with your hands at shoulder height. Fully extend your arms forwards and in front of your
+                    head then return under control to the start position.</td>
+            </tr>
+
+
+            <tr>
+                <td>CABLE TRICEP KICKBACK</td>
+                <td><img src="Main_screen_photos/Triceps/Cable-Tricep-Kickback.gif"
+                        alt="A demonstration of a man do cable triceps kickbacks"></td>
+                <td>Triceps</td>
+                <td>Start with a rope or handle attached to a cable machine. Hinge forward from your hips and support
+                    your opposite elbow on your thigh. Exhale, straighten your elbow against the resistance, holding
+                    briefly at the top, and then return to the starting position. Utilize the constant tension of the
+                    cables for a unique feel. Ensure a full range of motion, adjusting the weight if needed to complete
+                    it comfortably.</td>
+            </tr>
+
+
+        </table>
+
+
+
+    </section>
+
+
+
+
+
+
+    <section id="Abs/Core">
+        <h1 class="DTitles">Abs / Core</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>DRAGON FLAG</td>
+                <td><img src="Main_screen_photos/Abs:Core/Leg-Raise-Dragon-Flag.gif"
+                        alt="A demonstration of a man doing leg raise dragon flag"></td>
+                <td>Abs / Calisthenics</td>
+                <td>Lie on a bench or flat surface, supporting your head and placing hands firmly. Lift your legs and
+                    hips, forming a straight line from head to feet. Lower legs slowly, engaging your core. Reverse the
+                    movement, raising legs back up using core strength. Repeat for desired reps.</td>
+            </tr>
+
+
+            <tr>
+                <td>CROSS CRUNCH</td>
+                <td><img src="Main_screen_photos/Abs:Core/Cross-Crunch.gif"
+                        alt="A demonstration of a man doing cross crunches"></td>
+                <td>Abs</td>
+                <td>Lie on the mat with knees bent, feet straight, and hands in front of your head. Engage your core,
+                    lift elbows and upper back off the floor, twisting torso left to bring left elbow toward right knee.
+                    Hold briefly, then lower upper body slowly using core control.</td>
+            </tr>
+
+            <tr>
+                <td>STANDING CABLE CRUNCH</td>
+                <td><img src="Main_screen_photos/Abs:Core/Standing-Cable-Crunch.gif"
+                        alt="A demonstration of a man doing standing cable crunch"></td>
+                <td>Abs</td>
+                <td>Set the cable machine to a high position, attach a rope or handle, and stand with feet
+                    shoulder-width apart. Hold the rope near your ears, step back for tension, and position elbows
+                    outward. Initiate the crunch by bending at the waist, bringing elbows and head towards knees.
+                    Contract your abs, exhale, and hold briefly. Slowly return, extending your torso. Maintain proper
+                    form, engage core muscles, and choose a suitable weight/resistance level.</td>
+            </tr>
+
+            <tr>
+                <td>SEATED BENCH LEG PULL-IN</td>
+                <td><img src="Main_screen_photos/Abs:Core/Seated-Bench-Leg-Pull-in.gif"
+                        alt="A demonstration of a man doing seated bench leg pull in"></td>
+                <td>Abs</td>
+                <td>Start by sitting on a flat bench with legs extended, hands on the bench for support. Lift legs off
+                    the ground, keeping them parallel to the floor. Tighten your core and initiate the movement by
+                    bending your knees, pulling them towards your chest. Hold at the top, squeezing your lower abs, then
+                    slowly extend your legs back to the starting position. Repeat for the desired repetitions.</td>
+            </tr>
+
+
+            <tr>
+                <td>MOUNTAIN CLIMBER</td>
+                <td><img src="Main_screen_photos/Abs:Core/Mountain-climber.gif"
+                        alt="A demonstration of a woman doing mountain climber"></td>
+                <td>Abs</td>
+                <td>Assume a press-up position, hands shoulder-width apart, body straight. Bring your right knee toward
+                    your chest, placing the ball of your right foot on the floor. Spring up, switch feet, bringing your
+                    left foot toward your chest. Continue alternating feet for the desired reps, then return to the
+                    start position.</td>
+            </tr>
+
+        </table>
+
+
+    </section>
+
+
+
+    <section id="legs">
+        <h1 class="DTitles">Legs</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>HIGH KNEE LUNGE ON BOSU BALL / BOSU BALL REVERSE LUNGE</td>
+                <td><img src="Main_screen_photos/Legs/High-Knee-Lunge-on-Bosu-Ball.gif"
+                        alt="A demonstration of a man doing Bosu ball reverse lunge"></td>
+                <td>Leg, Hip</td>
+                <td>Start by flipping the Bosu Ball with the flat side up and lift one foot onto the center. Lower into
+                    a reverse lunge, then push back up, lifting your back knee toward your chest. The unstable surface
+                    engages stabilizing muscles, so focus on balance. Switch legs and repeat, using your core and leg
+                    muscles for stability. Perform for a set number of reps or time duration.</td>
+            </tr>
+
+            <tr>
+                <td>DUMBBELL WALKING LUNGE</td>
+                <td><img src="Main_screen_photos/Legs/dumbbell-lunges.gif"
+                        alt="A demonstration of a man doing dumbbell walking lunges"></td>
+                <td>Full Body, Hip, Leg</td>
+                <td>Hold a dumbbell in each hand at your sides, maintain an upright posture, and take a step forward
+                    with your right foot, lowering into a lunge. Push through the front heel to stand up, bring the back
+                    foot forward, and continue alternating legs for walking lunges. Adjust weight and reps based on
+                    fitness level, starting with lighter weights for beginners.</td>
+            </tr>
+
+
+            <tr>
+                <td>DUMBBELL SQUAT</td>
+                <td><img src="Main_screen_photos/Legs/Dumbbell-Squat.gif"
+                        alt="A demonstration of a man doing dumbbell squats"></td>
+                <td>Leg, Hip</td>
+                <td>Stand with feet shoulder-width apart. Hold dumbbells at your sides or a single dumbbell at your
+                    chest. Maintain an upright posture, engage your core, and descend by pushing hips back and bending
+                    knees. Lower until thighs are parallel or below parallel. Ascent by pushing through heels, driving
+                    hips forward, and exhaling. Repeat for desired reps, ensuring a neutral spine throughout the motion.
+                    Adjust weight and depth based on fitness level.</td>
+            </tr>
+
+
+            <tr>
+                <td>BULGARIAN SPLIT SQUAT JUMP</td>
+                <td><img src="Main_screen_photos/Legs/Bulgarian-Jump-Squat.gif"
+                        alt="A demonstration of a man doing bulgarian split squat"></td>
+                <td>Leg, Hip</td>
+                <td>Start with feet shoulder-width apart. Place the left foot on a bench or step, keeping the right foot
+                    on the ground. Lower the body by bending the right knee and hip, keeping the left foot elevated.
+                    Jump explosively off the right foot, reaching a 90-degree angle. Return to a 90-degree position and
+                    repeat the jump. Switch legs and repeat. Adjust intensity based on fitness level.</td>
+            </tr>
+
+
+            <tr>
+                <td>LEG PRESS</td>
+                <td><img src="Main_screen_photos/Legs/Leg-Press.gif" alt="A demonstration of a man doing leg presses">
+                </td>
+                <td>Leg</td>
+                <td>Adjust the seat for a 90-degree knee bend. Add weights gradually, starting with a comfortable load.
+                    Place feet hip-width apart on the platform. Hold handles for stability, brace your core, and push
+                    against the platform to extend legs. Maintain back contact and avoid locking knees at the top. Lower
+                    the weight slowly, allowing knees to bend. Complete desired reps, focusing on control. Start with
+                    lighter weights and progress gradually.</td>
+            </tr>
+
+
+        </table>
+
+
+    </section>
+
+
+
+    <section id="calf">
+        <h1 class="DTitles">Calf</h1>
+
+
+        <table class="DAYST">
+
+            <tr>
+                <th>Exercises</th>
+                <th>Demonstration</th>
+                <th>Primary Muscles</th>
+                <th>How To Do</th>
+            </tr>
+
+
+            <tr>
+                <td>STANDING CALF RAISE</td>
+                <td><img src="Main_screen_photos/Calf/Standing-Calf-Raise.gif"
+                        alt="A demonstration of woman doing standing calf raises"></td>
+                <td>Calf</td>
+                <td>Start by standing on a high level on your toes, go all the way down, then extend all the way up</td>
+            </tr>
+
+
+            <tr>
+                <td>Leg Press Calf Raise</td>
+                <td><img src="Main_screen_photos/Calf/Leg-Press-Calf-Raise.gif"
+                        alt="A demonstration of a man doing leg press calf raise"></td>
+                <td>Calf</td>
+                <td>If using the 45 degree leg press, press the plate off the safety bars and extend your legs out,
+                    keeping a slight bend to your knees. Slowly lift your heels by contracting your calf muscles. This
+                    will push the plate. Pause at the top before slowly reversing the movement.</td>
+            </tr>
+
+
+            <tr>
+                <td>HACK SQUAT CALF RAISE</td>
+                <td><img src="Main_screen_photos/Calf/Hack-Squat-Calf-Raise.gif"
+                        alt="A demonstration of a man doing hack squats"></td>
+                <td>Calf</td>
+                <td>Push up and take the weight off the rack by releasing the safety. Keeping your legs straight, slowly
+                    raise your heels off the floor as far as possible. Pause, and then slowly lower back to the starting
+                    position without letting your heels fully rest on the foot plate.</td>
+            </tr>
+
+
+        </table>
+
+
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1621 @@
+body{
+    margin: 0;
+}
+
+/* Page 1 */
+
+
+/* Entry of each section */
+.small_intro h1{
+    color: orange;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: clamp(7px, 1vw, 10px); /* Clamp is used to change the size of the object when screen gets smaller or bigger */
+    padding-top: 15px;
+}
+
+.section-2-3-Intro{
+    display: flex;
+    justify-content: center;
+}
+
+.Big_Intro h1{
+    padding-top: 10px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: clamp(20px, 2.8vw, 45px); 
+}
+
+
+
+
+/* header */
+
+header{
+    background-color: black;
+    height: 50px;
+}
+#Fit_Forge{
+    color: orange;
+    margin: 20px 0px 0px 25px;
+    font-size: clamp(5px, 2vw, 25px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+#navigation{
+    display: flex;
+    justify-content: space-between;
+}
+#navigation ul{
+    display: flex;
+    list-style-type: none;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+}
+
+.web{
+    margin-right: clamp(15px, 2vw, 30px);
+    font-size: clamp(7px, 1.5vw, 18px);
+    margin-top: 20px;
+}
+
+.icons{
+    margin-top: clamp(12px, 1.5vw, 17px);
+    margin-right: clamp(15px, 2vw, 30px);
+}
+
+.nav_Sign a:visited{
+    color: white;
+}
+.nav_Sign a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    text-decoration: none;
+    position: relative; /* If the <a> tag is not set to "position: relative" it won't be considered as a positioned element, and the ::after pseudo-element will be positioned relative to the initial containing block, which is not the desired behavior. */
+    color: white;
+}
+.nav_Sign a:hover{
+    color: orange;
+}
+.nav_Sign a::after{
+    content: ""; /* content is empty so only the line would be visible */
+    height: 2px; /* thickness of the line */
+    width: 0; /* In order for the line to initially be invisible */
+    background: orange;
+    position: absolute;
+    left: 0px; /* To center it under the words */
+    bottom: -10px; /* how far is it from the line */
+}
+.nav_Sign a:hover::after{
+    width: 100%;
+    transition: width 0.3s ease; /* Transition only on the width change */
+}
+#navigation li:hover, #Sign_in:hover{
+    transform: scale(0.95); /* Making the word smaller when hovering */
+}
+#Sign_in{
+    margin: 20px 55px 0px 0px;
+    font-size: clamp(7px, 1.5vw, 18px);
+}
+
+.fa-instagram, .fa-youtube{
+    font-size: clamp(10px, 2.5vw, 25px);
+    color: red;
+}
+
+.fa-facebook{
+    font-size: clamp(10px, 2.5vw, 25px);
+    color: blue;
+}
+
+.fa-right-to-bracket{
+    font-size: clamp(10px, 2vw, 20px);
+}
+
+#instagram::after{
+    background-color: red;
+}
+#youtube::after{
+    background-color: red;
+}
+#fb::after{
+    background: blue;
+}
+
+
+
+
+
+
+
+
+/* Section 1 */
+
+#container{
+    background-image: url(Main_screen_photos/WhatsApp\ Image\ 2024-04-20\ at\ 23.24.47.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: clamp(280px, 55vw, 800px);
+    display: flex;
+    justify-content: flex-end;
+}
+#Desc_box{
+    color: white;
+    width: 50%;
+}
+#Desc_box h1{
+    margin: 0;
+    font-size: clamp(25px, 4.5vw, 80px);
+    padding-top: clamp(50px, 10.5vw, 155px);
+    padding-right: clamp(40px, 8vw, 120px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Desc_box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: clamp(0px, 2vw, 30px) 0px;
+    max-width: 68%;
+    margin: 0;
+    font-size: clamp(7px, 1.5vw, 20px);
+}
+#Get_st{
+    cursor: pointer;
+    width: clamp(80px, 11vw, 175px);
+    height: clamp(20px, 3vw, 40px);
+    font-size: clamp(7px, 1vw, 13px);
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    background: linear-gradient(135deg, red, orange);
+}
+
+
+
+
+
+
+
+/* Section 2*/
+
+#Section_2_container{
+    background-color: rgb(37, 37, 37);
+}
+
+#About_Content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Titles h1{
+    color: orange;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(10px, 2vw, 30px);
+}
+
+.Titles p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(5px, 1.3vw, 16px);
+}
+
+.Titles{
+    width: 20%;
+    text-align: center;
+}
+
+
+
+/* Section 3 */
+
+#Section_3_container{
+    background-color: black;
+    height: clamp(500px, 57vw, 800px);
+}
+
+.Under_MP{
+    border-color: orange;
+    border-width: 1px;
+    width: 5%;
+}
+
+#Membership_Content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: clamp(60px, 10vw, 140px);
+}
+
+.Memberships{
+    border: 0.5px solid white;
+    width: 20%;
+    text-align: center;
+    transition: border-color 0.3s ease, transform 0.3s ease, margin 0.3s ease;
+    text-decoration: none;
+}
+
+.Memberships h1{
+    color: white;
+    font-size: clamp(13px, 2vw, 30px);
+}
+
+.Memberships h1 sub{
+    font-size: clamp(7px, 2vw, 20px);
+}
+
+.Sentence{
+    background-color: black;
+    height: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Sentence p{
+    font-size: clamp(9px, 1.3vw, 16px);
+}
+
+.Offers{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: clamp(8px, 1.3vw, 14px);
+}
+
+.breaker{
+    border-color: white;
+    width: 50%;
+}
+
+.Sign{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(8px, 1.3vw, 14px);
+    visibility: hidden;
+}
+
+.Memberships:hover{
+    cursor: pointer;
+    border-color: orange;
+    transform: scale(1.15);
+    margin: 0px 20px;
+}
+
+.Memberships:hover .Sign{
+    visibility: visible;
+}
+
+.Memberships:hover .Sentence{
+    background: linear-gradient(135deg, red, orange);
+}
+
+
+
+
+
+
+/* Section 4 */
+
+#BMI_content{
+    background-color: rgb(37, 37, 37);
+    height: clamp(500px, 49vw, 700px);
+    display: flex;
+    justify-content: space-between;
+}
+
+#BMI_box{
+    padding: clamp(40px, 5vw, 80px) 0px 0px clamp(40px, 6vw, 70px);
+    width: 41%;
+}
+
+#Advanced{
+    display: flex;
+    justify-content: left;
+}
+
+#calc{
+    display: flex;
+    justify-content: left;
+    
+}
+
+#Under_calc{
+    border: 1px solid orange;
+    width: 10%;
+    margin: clamp(3px, 1vw, 15px) 0px;
+}
+
+.boxes_titles{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(7px, 1vw, 16px);
+}
+
+.BMI_attributes{
+    margin-top: clamp(20px, 3vw, 40px);
+}
+
+#heightCM, #weightKG, #age{
+    border: 1px solid white;
+    border-radius: 2px;
+    width: clamp(50px, 15vw, 250px);
+    height: clamp(20px, 2.5vw, 40px);
+    font-size: clamp(7px, 2vw, 15px);
+    background-color: black;
+    color: white;
+    outline: 0;    
+}
+
+#Weight_Age_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+#BMI_Image_box{
+    width: 50%;
+}
+
+#BMI_Image{
+    width: 100%;
+    height: 100%;
+}
+
+#male{
+    margin-left:0;
+    margin-right: clamp(6px, 1vw, 15px);
+    width: 5%;
+}
+
+#male_label, #female_label{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(10px, 1.5vw, 15px);
+}
+
+#female{
+    margin: auto clamp(6px, 1vw, 15px) auto clamp(25px, 3.5vw, 50px);
+    width: 5%;
+}
+
+#submit_box{
+    margin-top: clamp(20px, 3vw, 40px);
+}
+
+#submit{
+    cursor: pointer;
+    width: clamp(80px, 11vw, 175px);
+    height: clamp(20px, 3vw, 40px);
+    font-size: clamp(7px, 1vw, 13px);
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    background: linear-gradient(135deg, red, orange);
+}
+
+#submit_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bmi-result, .bmi-category {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(10px, 2vw, 18px);
+    margin-bottom: clamp(10px, 2vw, 20px);
+    margin-top: 10px;
+}
+
+#submit {
+    cursor: pointer;
+    width: clamp(80px, 11vw, 175px);
+    height: clamp(20px, 3vw, 40px);
+    font-size: clamp(7px, 1vw, 13px);
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    background: linear-gradient(135deg, red, orange);
+}
+
+
+
+
+
+
+
+/* Section 5 */
+
+#all_our_img{
+    width: 100%;
+    height: clamp(380px, 70vw, 700px);
+}
+
+#all_our_img_box{
+    width: 50%;
+    height: clamp(380px, 70vw, 700px);
+}
+
+#All_our_offers_content{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(37, 37, 37);
+    
+}
+
+#all_our_offers_box{
+    padding: clamp(40px, 5vw, 80px) 0px 0px clamp(40px, 6vw, 70px);
+    width: 45%;
+}
+
+#Under_offers{
+    border: 1px solid orange;
+    width: 10%;
+    margin: clamp(3px, 1vw, 15px) 0px;
+}
+
+.first-second-third-offers{
+    width: 85%;
+    margin-top: clamp(20px, 4vw, 40px);
+    display: flex;
+    justify-content: left;
+}
+
+#first_offer_sentence, #third_offer_sentence{
+    margin-left: clamp(30px, 3.5vw, 50px);
+}
+
+#second_offer_sentence{
+    margin-left: clamp(25px, 3.5vw, 40px);
+}
+
+.Tailored-depth-tech{
+    color: white;
+    font-size: clamp(7px, 2vw, 17px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Offers_sentences{
+    color: white;
+    font-size: clamp(5px, 1vw, 14px);
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#third_offer_sentence{
+    margin-bottom: clamp(30px, 5.5vw, 60px);
+}
+
+.fa-bullseye{
+    margin-left: clamp(2px, 0.3vw, 6px);
+}
+
+.fa-bullseye, .fa-dumbbell, .fa-rocket{
+    color: #ffa500;
+    font-size: clamp(25px, 4vw, 55px);
+    margin-top: clamp(10px, 2vw, 20px);
+}
+
+
+
+
+/* Section 6 */
+
+#before_footer{
+    background-color: black;
+}
+
+#First_box, #second_box, #third_box{
+    padding-top: clamp(40px,  5.5vw, 80px);
+    width: 30%;
+}
+
+#First_box h1{
+    margin: 0;
+    color: orange;
+    font-size: clamp(20px, 3vw, 40px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+#Journey_starts{
+    color: white;
+    font-size: clamp(5px, 1vw, 14px);
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: clamp(15px, 3vw, 35px);
+    margin-bottom: clamp(10px, 3vw, 30px);
+    width: 70%;
+    line-height: clamp(10px, 2.5vw, 24px);
+}
+
+.social_media{
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    width: clamp(30px, 3vw, 40px);
+    height: clamp(30px, 3vw, 40px);
+}
+
+.social_media:hover{
+    background: linear-gradient(135deg, red, orange);
+}
+
+#Quick_Contacts{
+    margin: 0;
+    color: white;
+    font-size: clamp(10px, 2vw, 25px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+#First_box_content .fa-instagram, #First_box_content .fa-youtube, #First_box_content .fa-facebook{
+    font-size: clamp(10px, 1.5vw, 20px);
+}
+
+.social_media_links{
+    text-decoration: none;
+}
+
+
+
+
+
+.Second_box_content{
+    margin-top: clamp(13px, 2vw, 30px);
+    display: flex;
+    justify-content: left;
+}
+
+#before_footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: clamp(200px, 28vw, 400px);
+}
+
+.Address{
+    color: white;
+    font-size: clamp(5px, 1vw, 14px);
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 15px;
+}
+
+.fa-location-dot, .fa-envelope, .fa-phone{
+    color: #ffa500;
+    font-size: clamp(6px, 1vw, 16px);
+    margin-top: 2px;
+}
+
+#Email_Fit_Forge:visited{
+    color: white;
+}
+
+
+
+
+/* Form feedback*/
+.feed_container{
+    position: relative;
+    width: 400px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feed_container .post{
+    display: none;
+}
+
+.feed_container .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+}
+
+.feed_container .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+.feed_container .edit:hover{
+    text-decoration: underline;
+}
+
+.feed_container .star-widget .feed_input{
+    display: none;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+.feed_input:not(checked) ~ label:hover, .feed_input:not(checked) ~ label:hover ~ label{
+    color: #fd4;
+}
+
+.feed_input:checked ~ label{
+    color: #fd4;
+}
+
+#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+#feed_form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+#rate-1:checked ~ #feed_form header:before{
+    content: "I just hate it😠";
+}
+#rate-2:checked ~ #feed_form header:before{
+    content: "I don't like it😒";
+}
+#rate-3:checked ~ #feed_form header:before{
+    content: "It is awesome😄";
+}
+#rate-4:checked ~ #feed_form header:before{
+    content: "I just like it😎";
+}
+#rate-5:checked ~ #feed_form header:before{
+    content: "I just love it😍";
+}
+
+.feed_container #feed_form{
+    display: none;
+}
+
+.feed_input:checked ~ #feed_form{
+    display: block;
+}
+
+#feed_form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#feed_form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+    color: #eee;
+    resize: none;
+}
+
+#feed_form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#feed_form .btn #sub{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#feed_form .btn #sub:hover{
+    background: #1b1b1b;
+}
+
+
+
+/* Footer */
+
+#nav_again{
+    background: linear-gradient(135deg, red, orange);
+    height: clamp(25px, 3vw, 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_again ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.add_margin{
+    margin-right: 50px;
+}
+
+#nav_again li{
+    font-size: clamp(7px, 1.5vw, 18px);
+}
+
+#nav_again a:visited{
+    color: white;
+}
+
+#nav_again a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+#last_box{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(25px, 3vw, 40px);
+}
+
+#copyright{
+    margin: 0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sign Up Log In Pages */
+
+.Sign_Log_Page{
+    background-color: rgb(71, 71, 71);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.Welcome_Sign_Login{
+    display: flex;
+    justify-content: center;
+}
+
+.Welcome_Sign_Login h1{
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.Sign_Log_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sign_Log_Create_Login{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+#Sign_big_box{
+    height: 490px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px) brightness(80%);
+    border-radius: 20px;
+}
+
+#big_box{
+    height: 450px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px) brightness(80%);
+    border-radius: 20px;
+}
+
+#Sign_box{
+    height: 450px;
+    width: 310px;
+}
+
+#box{
+    height: 350px;
+    width: 310px;
+}
+
+.Log_In_Sign_Up_acc{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    
+}
+
+.Log_In_Sign_Up_acc a:visited{
+    color: white;
+}
+
+.Log_In_Sign_Up_acc a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.Log_In_Sign_Up_acc a:hover{
+    text-decoration: underline;
+}
+
+.Log_In_Sign_Up_acc p{
+    margin: 0;
+}
+
+
+.Create_Account_Log_button{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 25px 0px;
+}
+
+.Create_Account_Log_button button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    width: 310px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+}
+
+#check_Remember{
+    font-size: 14px;
+}
+
+#check_Forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#check_Forgot a{
+    text-decoration: none;
+}
+
+#check_Forgot a:visited{
+    color: white;
+}
+
+#check_Forgot a:hover{
+    text-decoration: underline;
+}
+
+
+.Log_Sign_checkbox{
+    margin: 3px;
+}
+
+.email_pass{
+    margin: 30px 0px;
+}
+
+.email_pass .fa-user, .fa-unlock{
+    transform: translateY(-30px) translateX(290px);
+}
+
+.email_pass input{
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.email_pass label{
+    position: absolute;
+    transform: translateY(-35px) translateX(-10px);
+    transition: 0.5s;
+}
+
+.email_pass input:focus~label, .email_pass input:not(:placeholder-shown)~label{
+    transform: translateY(-60px) translateX(-10px);    /* reason behind using "not(:placeholder-shown)" is to make the effect work even if the user didn't write the correct form */
+}
+
+.Sign_Up_Log_in_phone_design{
+    background-image: url(Main_screen_photos/all_our2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 600px;
+    border: 10px solid rgb(42, 42, 42);
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.FN_LN_Username{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FN_LN_Username #FN, #LN{
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    width: 40%;
+    height: 40px;
+    outline: none;
+    color: white;
+}
+
+.FN_LN_Username #FN{
+    font-size: 14px;
+}
+
+.FN_LN_Username #LN{
+    font-size: 17px;
+}
+
+.FN_LN_Username #FN_Label{
+    position: absolute;
+    transform: translateX(3px) translateY(10px);
+    transition: 0.5s;
+}
+
+.FN_LN_Username #LN_Label{
+    position: absolute;
+    transform: translateX(186px) translateY(10px);
+    transition: 0.5s;
+}
+
+#FN:focus+label, #FN:valid+label{
+    transform: translateY(-12px) translateX(3px);
+}
+
+#LN:focus+label, #LN:valid+label{
+    transform: translateX(186px) translateY(-12px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Payment Page */
+
+.Sign_Log_Page{
+    background-color: rgb(71, 71, 71);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.Welcome_Sign_Login{
+    display: flex;
+    justify-content: center;
+}
+
+.Welcome_Sign_Login h1{
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.Sign_Log_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sign_Log_Create_Login{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+#payment_box{         
+    height: 540px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px) brightness(80%);
+    border-radius: 20px;
+}
+
+#Sign__payment_box{              
+    height: 480px;
+    width: 310px;
+}
+
+.Create_Account_Log_button{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 25px 0px;
+}
+
+.Create_Account_Log_button input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    width: 310px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.Sign_Up_Log_in_phone_design{
+    background-image: url(Main_screen_photos/all_our2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 600px;
+    border: 10px solid rgb(42, 42, 42);
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#Gender_Date{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Gender_Date #gender{
+    width: 30%;
+    height: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+#age_box #age:focus~label, #age_box #age:valid~label{
+    transform: translateY(15px) translateX(-70px);
+}
+
+#age_box #age{
+    background: transparent;
+    margin-top: 35px;
+    border: 0;
+    border-bottom: 2px solid white;
+    width: 70px;
+    height: 20px;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+#age_box #age_label{
+    position: absolute;
+    font-size: 14px;
+    transform: translateY(30px) translateX(-70px);
+    transition: 0.5s;
+}
+
+#subscription{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 20px;
+}
+
+.cardnameNum{
+    width: 100%;
+    margin-top: 45px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 14px;
+}
+
+.cardnameNum_Label{
+    position: absolute;
+    transform: translateY(-30px);
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.cardnameNum:focus~label, .cardnameNum:not(:placeholder-shown)~label{
+    transform: translateY(-45px);
+}
+
+#Expiration_label{
+    position: absolute;
+    margin-top: 20px;
+}
+
+#Expiration_month, #Expiration_year{
+    width: 48%;
+    height: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+#CreditCVV{
+    width: 100%;
+    margin-top: 30px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 14px;
+}
+
+#CVV_label{
+    position: absolute;
+    transform: translateY(-30px);
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+#CreditCVV:focus~label, #CreditCVV:not(:placeholder-shown)~label{
+    transform: translateY(-45px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Workout Center */
+
+.Pages_header{
+    background: transparent;
+}
+
+.WC_body{
+    background-image: url(Main_screen_photos/No\ Pain\ No\ Gain\ Neon\ Sign\ for\ Gyms\ &\ Fitness\ Studios\ -\ 60cm\ \(2ft\)\ _\ Purple\ _\ Glass\ Neon.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+}
+
+.Fit_Forge_wc{
+    color: orange;
+    margin: 30px 0px 0px 25px;
+    font-size: clamp(5px, 2vw, 25px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+.navigation_plans{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Profile{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(5px, 1.5vw, 18px);
+    margin: 30px 25px 0px 0;
+}
+
+.Profile .fa-user, .fa-right-from-bracket{
+    margin-left: 10px;
+}
+
+.Profile:visited{
+    color: white;
+}
+
+
+#Lib_Train{
+    display: flex;
+    min-height: 91.5vh;
+    justify-content: space-evenly;
+}
+
+.LT_BOX{
+    width: clamp(150px, 25vw, 350px);
+    height: clamp(150px, 25vw, 350px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Library_box{
+    background-image: url(Main_screen_photos/LogIn.jpeg);
+}
+
+#Training_Plans_box{
+    background-image: url(Main_screen_photos/girl3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Library_Train_link{
+    margin-top: 140px;
+    text-decoration: none;
+    height: clamp(150px, 25vw, 350px);
+    transition: 0.5s;
+}
+
+.Library_Train_link h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(15px, 2vw, 25px);
+}
+
+#T_link h1{
+    transform: translateX(90px) translateY(-225px);
+    display: inline-block;
+}
+
+#L_link h1{
+    transform: translateX(55px) translateY(-220px);
+    display: inline-block;
+}
+
+.Library_Train_link:visited{
+    color: white;
+}
+
+.Library_Train_link:hover{
+    transform: scale(1.15);
+}
+
+.Library_Train_link:hover div{
+    filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Training Plans Page */
+#Three_Training_Plans{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 94vh;
+}
+
+#Three_Training_Plans .days_link{
+    margin-top: 90px;
+    width: 20%;
+    height: clamp(400px, 38vw, 600px);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+}
+
+#Three_Training_Plans .days_link h1{
+    transform: translateX(100px) translateY(-380px);
+    display: inline-block;
+}
+
+#Three_Training_Plans .days_link:visited{
+    color: white;
+}
+
+#Three_Training_Plans .days_link:hover{
+    transform: scale(1.10);
+}
+
+#Three_Training_Plans .days_link:hover div{
+    filter: blur(5px);
+}
+
+#Three_Training_Plans .days{
+    height:600px;
+    transform: translateY(-20px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid orange;
+}
+
+#Three_Training_Plans #four_days{
+    background-image: url(Main_screen_photos/Man\ And\ women.jpeg);
+}
+
+#Three_Training_Plans #five_days{
+    background-image: url(Main_screen_photos/CBUM.jpeg);
+}
+
+#Three_Training_Plans #six_days{
+    background-image: url(Main_screen_photos/girl1.jpeg);
+}
+
+.LT_Title{
+    font-family: "Pacifico", cursive;
+    font-size: clamp(20px, 3vw, 50px);
+    margin: 0;
+    transform: translateX(-20px);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Four Days - Five Days - Six Days - Library of Exercises */
+
+.Day_Title{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(20px, 3vw, 50px);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Four_Five_Six_DAYS{
+    background-color: black;
+}
+
+.DTitles{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+}
+
+.DAYST{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.DAYST th{
+    color: orange;
+}
+
+.DAYST tr{
+    height:100px;
+}
+
+.DAYST td{
+    width: 12.5%;
+}
+
+.DAYST img{
+    width: 100%;
+    height: 200px;
+}
+
+.DAYST .IMAGE_Exercises{
+    height: 200px;
+}
+
+.DAYST th, td{
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Profile Page */
+
+.Profile_page_col{
+    background-color: rgb(37, 37, 37);
+}
+
+#Profile_box{
+    width: 80%;
+    margin-top: 30px;
+}
+
+#cover_photo{
+    width: 90%;
+}
+
+#cover_photo img{
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 20px;
+}
+
+#Bigg_box_profile{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#Container_box{
+    display: flex;
+}
+
+#image_holder{
+    display: flex;
+    justify-content: center;
+    height: 35%;
+}
+
+#profile_pic{
+    position:relative;
+    top: -80px;
+    left: 50px;
+    width: 20%;
+    height: 164px;
+}
+
+#profile_pic img{
+    border: 7px solid white;
+    border-radius: 80px;
+    height: 150px;
+    width: 150px;
+}
+
+#profile_pic a{
+    position: relative;
+    top: -40px;
+    left: 67px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    visibility: hidden;
+}
+
+#profile_pic:hover a{
+    visibility: visible;
+}
+
+#Log_Out_Account:hover{
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+#Person_own_username{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: -160px;
+    left: 230px;
+}
+
+#Prof_Content{
+    margin: 0px 100px 0px 100px;
+}
+
+.All_content{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    padding: 50px 0 50px 0;
+}
+
+.All_content a{
+    color: lightblue;
+    font-size: 15px;
+}
+
+.All_content a:visited{
+    color: lightblue;
+}
+
+#getting_back{
+    width: 15%;
+}
+
+#getting_back div{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#getting_back div a{
+    color: white;
+    text-decoration: none;
+}
+
+#getting_back div a:visited{
+    color: white;
+}
+
+#getting_back div i{
+    margin-right: 10px;
+}

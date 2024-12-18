@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Css Sheet -->
+    <link rel="stylesheet" href="Allwebsite.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--  Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/8a9bc23044.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- This page includes only 1 section -->
+    <section class="Sign_Log_Page">
+        <!-- The sentence that should be viewed by the user when entering the page -->
+        <div class="Welcome_Sign_Login"><h1>Welcome To Our Family!</h1></div>
+
+        <!-- Can be considered as a section, and it was placed to be able to place the below div in the middle of the screen -->
+        <div class="Sign_Log_box">
+            <!-- This box was made to hold inside an image as a background, and the box containing the info that should be taken. This box is kind of
+            made to be something similar to a horizontal phone design -->
+            <div class="Sign_Up_Log_in_phone_design">
+                <!-- This box is the one we talked about above which should be located in the middle of the parent box (div) -->
+                <div id="payment_box">
+                    <!-- Below box is placed inside the original box containing the info, this box was made just to make it easier to style the page,
+                    changing width and height and other attributes as desired, without affecting the first box in which I wanted to apply another
+                    attributes that I didn't want to be located inside this box -->
+                    <div id="Sign_payment_box">
+                        <!-- This is the form that the user will be filling -->
+                        <form action="Info_Page.php" method="post" onsubmit="return validateSignUpFormInfo()">
+                            <h2 class="Sign_Log_Create_Login">Create Your Account</h2>
+                            
+                            <!-- A box containing the gender and the date, also this box was made to make it easier to style -->
+                            <div id="Gender_Date">
+                                <select name="gender" id="gender" required>
+                                    <option value="Gender" disabled selected>Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <div id="age_box">
+                                    <input type="text" name="age" id="age" pattern="[0-9]+" title="Please enter a valid number" placeholder=" " required>
+                                    <label for="age" id="age_label">Age</label>
+                                </div>
+                            </div>
+
+                            <!-- A box containing the 3 subscriptions that users are allowed to choose -->
+                            <div id="subscription_choose">
+                                <select name="subscription" id="subscription" required>
+                                    <option value="subscription" disabled selected>Subscription</option>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Deluxe">Deluxe</option>
+                                    <option value="Premium">Premium</option>
+                                </select>
+                            </div>
+
+                            <!-- A box containing the input that should be taken from the user. name on the user's credit card -->
+                            <div id="CardHolderName">
+                                <input type="text" name="cardname" id="cardname" class="cardnameNum" placeholder=" " required>
+                                <label for="cardname" id="cardname_label" class="cardnameNum_Label">Cardholder Name</label>
+                            </div>
+
+                            <!-- A box containing the input that should be taken from the user. number on the user's credit card -->
+                            <div id="CreditCardNumber">
+                                <input type="text" name="CreditNum" id="CreditNum" class="cardnameNum" pattern="\d{16}" title="Please enter a 16-digit credit card number" placeholder=" " required>
+                                <label for="CreditNum" id="Credit_num_label" class="cardnameNum_Label">Credit Card Number</label>
+                            </div>
+
+                            <!-- A box containing the input that should be taken from the user. expiry date on the user's credit card -->
+                            <div id="Expiry">
+                                <label for="Expiration" id="Expiration_label">Expiry Date:</label>
+                                <br>
+                                <select name="Expiration_month" id="Expiration_month" required>
+                                    <option value="Month" disabled selected>Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                
+                                <select name="Expiration_year" id="Expiration_year" required>
+                                    <option value="Year" disabled selected>Year</option> 
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>
+                                    <option value="2034">2034</option>
+                                    <option value="2035">2035</option>
+                                    <option value="2036">2036</option>
+                                    <option value="2037">2037</option>
+                                    <option value="2038">2038</option>
+                                    <option value="2039">2039</option>
+                                    <option value="2040">2040</option>
+                                    <option value="2041">2041</option>
+                                    <option value="2042">2042</option>
+                                    <option value="2043">2043</option>
+                                </select>
+                            </div>
+
+                            <!-- A box containing the input that should be taken from the user. CVV (3-4 digits) on the user's credit card -->
+                            <div id="cvv-field">
+                                <input type="text" name="CreditCVV" id="CreditCVV" pattern="\d{3,4}" title="Please enter a 3/4-digit CVV" placeholder=" " required>
+                                <label for="CreditNum" id="CVV_label">CVV</label>
+                            </div>
+                        
+                            <!-- A button that should be directing the user to his/her account -->
+                            <div class="Create_Account_Log_button"><input type="submit" value="Create Account"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="AllWebsite.js"></script>
+</body>
+</html>
